@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Caculator"
-include ':app'
+rootProject.name = "Ex"
+include(":app")

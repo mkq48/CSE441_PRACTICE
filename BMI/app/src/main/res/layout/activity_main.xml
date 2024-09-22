@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chương trình tính chỉ số BMI"
+            android:background="#FFFF99"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTen"
+                android:text="Nhập Tên:"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edtTen"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCao"
+                android:text="Chiều Cao:"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edtCao"
+                android:inputType="numberDecimal"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNang"
+                android:text="Cân Nặng:"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edtNang"
+                android:inputType="numberDecimal"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnTinh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="Tính BMI"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBMI"
+                android:text="BMI = "
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edtBMI"
+                android:enabled="false"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCD"
+                android:text="Chuẩn Đoán:"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edtCD"
+                android:enabled="false"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,7 +39,7 @@
 
             <EditText
                 android:id="@+id/edtTen"
-                android:layout_width="200dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                  />
@@ -60,7 +60,7 @@
             <EditText
                 android:id="@+id/edtCao"
                 android:inputType="numberDecimal"
-                android:layout_width="278dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                  />
@@ -81,7 +81,7 @@
             <EditText
                 android:id="@+id/edtNang"
                 android:inputType="numberDecimal"
-                android:layout_width="278dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="10dp" />
@@ -113,7 +113,7 @@
             <EditText
                 android:id="@+id/edtBMI"
                 android:enabled="false"
-                android:layout_width="278dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="10dp" />
@@ -136,7 +136,7 @@
             <EditText
                 android:id="@+id/edtCD"
                 android:enabled="false"
-                android:layout_width="278dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="10dp" />

@@ -16,7 +16,8 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
 
     EditText edtTen, edtCao, edtNang, edtBMI, edtCD;
-    Button btnTinh = findViewById(R.id.btnTinh);
+    Button btnBMI;
+    DecimalFormat df;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         edtNang = findViewById(R.id.edtNang);
         edtBMI = findViewById(R.id.edtBMI);
         edtCD = findViewById(R.id.edtCD);
-
+        btnBMI = findViewById(R.id.btnTinh);
         
 
-        btnTinh.setOnClickListener(new View.OnClickListener() {
+        btnBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String cd = "";
@@ -58,9 +59,10 @@ public class MainActivity extends AppCompatActivity {
                     cd = "Bạn béo phì độ 3";
                 }
 
-                DecimalFormat df = new DecimalFormat("#.00");
+                df = new DecimalFormat("#.0");
 
                 edtBMI.setText(df.format(bmi));
+//                edtBMI.setText(bmi + "");
                 edtCD.setText(cd);
             }
         });

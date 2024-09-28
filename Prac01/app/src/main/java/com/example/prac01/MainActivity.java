@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,8 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button btnStart;
-    EditText edtName, edtGPA;
-
+    TextView txtname, txtgpa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +29,34 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        txtname = findViewById(R.id.txtName);
+        txtgpa = findViewById(R.id.txtGPA);
 
         btnStart = findViewById(R.id.btnStart);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, MainActivity2.class);
-                startActivityForResult(intent1, 1);
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivityForResult(intent, 1);
             }
         });
+
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK && data != null) {
+                String name = data.getStringExtra("name");
+                String gpa = data.getStringExtra("gpa");
+
+                txtname.setText("Họ và tên: " + name);
+                txtgpa.setText("Điểm GPA: " + gpa);
+            }
+        }
+    }
+
+
 }

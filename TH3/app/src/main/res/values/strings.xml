@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TH3</string>
+
+
+    <string-array name="address">
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Đà Nẵng</item>
+        <item>Hải Phòng</item>
+    </string-array>
+
+
+    <string-array name="major">
+        <item>Công nghệ thông tin</item>
+        <item>Kinh tế</item>
+        <item>Kỹ thuật</item>
+        <item>Quản trị kinh doanh</item>
+    </string-array>
+
+
+    <string-array name="year">
+        <item>Năm 1</item>
+        <item>Năm 2</item>
+        <item>Năm 3</item>
+        <item>Năm 4</item>
+    </string-array>
+
+
+</resources>
